@@ -1,5 +1,4 @@
-> [!NOTE]
-> Aquí va algo importante.
+
 
 
 /* Establece las propiedades generales para el documento, aplicando una fuente sans-serif
@@ -90,7 +89,8 @@ body {
     line-height: 1.5; 
 
 }
-
+> [!NOTE]
+> Aquí va algo importante.
 /* Define la animación de aparición gradual para la imagen */
 @keyframes show{
 
