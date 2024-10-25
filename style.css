@@ -1,35 +1,35 @@
 /* Agrega un comentario aquí para explicar la función del selector body */
 body {
-    /* Agrega un comentario aquí para explicar el atributo font-family */
+    /* aplica sans serif p */
     font-family: sans-serif;
-    /* Agrega un comentario aquí para explicar el atributo margin */
+    /* elimina el margin predeterminado del body */
     margin: 0;
 }
 
 /* Agrega un comentario aquí para explicar la función del selector .contenedor */
 .contenedor {
-    /* Agrega un comentario aquí para explicar el atributo display */
+    /*  */
     display: flex; 
-    /* Agrega un comentario aquí para explicar el atributo flex-wrap */
+    /*  permite que los elementos dentro del contenedor (tarejeta) se envuelvan en la siguiente linea si no caben en una  */
     flex-wrap: wrap; 
-    /* Agrega un comentario aquí para explicar el atributo justify-content */
+    /* distribuye uniformemente los elementos dentro de contenedor dejando espacio igual a ambos lado de la tarejeta */
     justify-content: space-around; 
-    /* Agrega un comentario aquí para explicar el atributo padding */
+    /* añade (20px) de espacio interno alrededor de todo el contenedor creando separacion entre el borde y elementos internos */
     padding: 20px;
 }
 /* Agrega un comentario aquí para explicar la función del selector .tarjeta */
 .tarjeta {
-    /* Agrega un comentario aquí para explicar el atributo width */
+    /* establece un ancho (de 300px) para cada tarjeta haciendo que todas tenga el mismo tamaño en terminos de ancho */
     width: 300px; 
-    /* Agrega un comentario aquí para explicar el atributo margin */
+    /* añade un margen de (10px) alrededor de cada tarjeta creando espacio entre las tarjetas y otros elementos  */
     margin: 10px; 
-    /* Agrega un comentario aquí para explicar el atributo border */
+    /* aplica un border (1px) de color #ccc alrededor de la tarejeta */
     border: 1px solid #ccc; 
-    /* Agrega un comentario aquí para explicar el atributo padding */
+    /* agrega 20 px de espacio interno dentro de la tarejeta separando el contenido de los bordes */
     padding: 20px; 
-    /* Agrega un comentario aquí para explicar el atributo border-radius */
+    /* redondea las esquinas de la tarejeta con un radio (5px) dandon alos bordes de la tarejeta  una experiencia agradable */
     border-radius: 5px; 
-    /* Agrega un comentario aquí para explicar el atributo box-shadow */
+    /*aplica una sombra debajo de la tarejeta */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 /* Agrega un comentario aquí para explicar la función del selector .tarjeta img */
