@@ -1,0 +1,79 @@
+/* Agrega un comentario aquí para explicar la función del selector body */
+body {
+    /* Agrega un comentario aquí para explicar el atributo font-family */
+    font-family: sans-serif;
+    /* Agrega un comentario aquí para explicar el atributo margin */
+    margin: 0;
+}
+
+/* Agrega un comentario aquí para explicar la función del selector .contenedor */
+.contenedor {
+    /* Agrega un comentario aquí para explicar el atributo display */
+    display: flex; 
+    /* Agrega un comentario aquí para explicar el atributo flex-wrap */
+    flex-wrap: wrap; 
+    /* Agrega un comentario aquí para explicar el atributo justify-content */
+    justify-content: space-around; 
+    /* Agrega un comentario aquí para explicar el atributo padding */
+    padding: 20px;
+}
+/* Agrega un comentario aquí para explicar la función del selector .tarjeta */
+.tarjeta {
+    /* Agrega un comentario aquí para explicar el atributo width */
+    width: 300px; 
+    /* Agrega un comentario aquí para explicar el atributo margin */
+    margin: 10px; 
+    /* Agrega un comentario aquí para explicar el atributo border */
+    border: 1px solid #ccc; 
+    /* Agrega un comentario aquí para explicar el atributo padding */
+    padding: 20px; 
+    /* Agrega un comentario aquí para explicar el atributo border-radius */
+    border-radius: 5px; 
+    /* Agrega un comentario aquí para explicar el atributo box-shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+/* Agrega un comentario aquí para explicar la función del selector .tarjeta img */
+.tarjeta img {
+    /* Agrega un comentario aquí para explicar el atributo width */
+    width: 100%; 
+    /* Agrega un comentario aquí para explicar el atributo height */
+    height: auto; 
+    /* Agrega un comentario aquí para explicar el atributo display */
+    display: block; 
+    /* Agrega un comentario aquí para explicar el atributo border-radius */
+    border-radius: 5px 5px 0 0; 
+}
+/* Agrega un comentario aquí para explicar la función del selector .tarjeta h3 */
+.tarjeta h3 {
+    /* Agrega un comentario aquí para explicar el atributo margin-top */
+    margin-top: 10px; 
+}
+
+/* Agrega un comentario aquí para explicar la función del selector .tarjeta p */
+.tarjeta p {
+    /* Agrega un comentario aquí para explicar el atributo font-size */
+    font-size: 0.9em; 
+    /* Agrega un comentario aquí para explicar el atributo line-height */
+    line-height: 1.5; 
+}
+@keyframes show{
+    from{
+      opacity: 0;
+      scale: 25%;
+    }
+    to{
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  
+  img{
+    view-timeline-name: --image;
+    view-timeline-axis: block ;
+    
+    animation-timeline: --image;
+    animation-name: show;
+    
+    animation-range: entry: 25% cover 50%;
+    animation-fill: both;
+  }
