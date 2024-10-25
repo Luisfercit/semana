@@ -1,79 +1,126 @@
-/* Agrega un comentario aquí para explicar la función del selector body */
+/* Establece las propiedades generales para el documento, aplicando una fuente sans-serif
+   y eliminando el margen predeterminado del body para un diseño más limpio */
 body {
-    /* aplica sans serif p */
+
+    /* Aplica la fuente sans-serif a todo el documento */
     font-family: sans-serif;
-    /* elimina el margin predeterminado del body */
+
+    /* Elimina el margen predeterminado del body */
     margin: 0;
+
 }
 
-/* Agrega un comentario aquí para explicar la función del selector .contenedor */
+/* Define las propiedades de diseño para el contenedor principal,
+   que agrupa las tarjetas y controla su disposición */
 .contenedor {
-    /*  */
+
+    /* Activa el modelo flexbox para alinear y distribuir las tarjetas */
     display: flex; 
-    /*  permite que los elementos dentro del contenedor (tarejeta) se envuelvan en la siguiente linea si no caben en una  */
+
+    /* Permite que los elementos dentro del contenedor se envuelvan en la siguiente línea si no caben */
     flex-wrap: wrap; 
-    /* distribuye uniformemente los elementos dentro de contenedor dejando espacio igual a ambos lado de la tarejeta */
+
+    /* Distribuye uniformemente los elementos dentro del contenedor dejando espacio igual en ambos lados */
     justify-content: space-around; 
-    /* añade (20px) de espacio interno alrededor de todo el contenedor creando separacion entre el borde y elementos internos */
+
+    /* Añade 20px de espacio interno alrededor de todo el contenedor para separar el borde y los elementos internos */
     padding: 20px;
-}
-/* Agrega un comentario aquí para explicar la función del selector .tarjeta */
-.tarjeta {
-    /* establece un ancho (de 300px) para cada tarjeta haciendo que todas tenga el mismo tamaño en terminos de ancho */
-    width: 300px; 
-    /* añade un margen de (10px) alrededor de cada tarjeta creando espacio entre las tarjetas y otros elementos  */
-    margin: 10px; 
-    /* aplica un border (1px) de color #ccc alrededor de la tarejeta */
-    border: 1px solid #ccc; 
-    /* agrega 20 px de espacio interno dentro de la tarejeta separando el contenido de los bordes */
-    padding: 20px; 
-    /* redondea las esquinas de la tarejeta con un radio (5px) dandon alos bordes de la tarejeta  una experiencia agradable */
-    border-radius: 5px; 
-    /*aplica una sombra debajo de la tarejeta */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-}
-/* Agrega un comentario aquí para explicar la función del selector .tarjeta img */
-.tarjeta img {
-    /* Agrega un comentario aquí para explicar el atributo width */
-    width: 100%; 
-    /* Agrega un comentario aquí para explicar el atributo height */
-    height: auto; 
-    /* Agrega un comentario aquí para explicar el atributo display */
-    display: block; 
-    /* Agrega un comentario aquí para explicar el atributo border-radius */
-    border-radius: 5px 5px 0 0; 
-}
-/* Agrega un comentario aquí para explicar la función del selector .tarjeta h3 */
-.tarjeta h3 {
-    /* Agrega un comentario aquí para explicar el atributo margin-top */
-    margin-top: 10px; 
+
 }
 
-/* Agrega un comentario aquí para explicar la función del selector .tarjeta p */
-.tarjeta p {
-    /* Agrega un comentario aquí para explicar el atributo font-size */
-    font-size: 0.9em; 
-    /* Agrega un comentario aquí para explicar el atributo line-height */
-    line-height: 1.5; 
+/* Define el diseño y el estilo de cada tarjeta individual dentro del contenedor */
+.tarjeta {
+
+    /* Establece un ancho de 300px para cada tarjeta, asegurando que todas tengan el mismo tamaño de ancho */
+    width: 300px; 
+
+    /* Añade un margen de 10px alrededor de cada tarjeta para crear espacio entre ellas */
+    margin: 10px; 
+
+    /* Aplica un borde de 1px de color #ccc alrededor de la tarjeta */
+    border: 1px solid #ccc; 
+
+    /* Añade 20px de espacio interno dentro de la tarjeta para separar el contenido de los bordes */
+    padding: 20px; 
+
+    /* Redondea las esquinas de la tarjeta con un radio de 5px, dando un aspecto agradable */
+    border-radius: 5px; 
+
+    /* Aplica una sombra debajo de la tarjeta para un efecto de profundidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
 }
+
+/* Establece el estilo para la imagen dentro de cada tarjeta */
+.tarjeta img {
+
+    /* Ajusta la imagen al ancho completo de la tarjeta */
+    width: 100%; 
+
+    /* Permite que la altura de la imagen se ajuste proporcionalmente */
+    height: auto; 
+
+    /* Hace que la imagen se muestre como un bloque, evitando espacios adicionales debajo */
+    display: block; 
+
+    /* Redondea las esquinas superiores de la imagen para que coincidan con la tarjeta */
+    border-radius: 5px 5px 0 0; 
+
+}
+
+/* Define el estilo para los encabezados h3 dentro de cada tarjeta */
+.tarjeta h3 {
+
+    /* Añade un margen superior de 10px para separar el encabezado del contenido anterior */
+    margin-top: 10px; 
+
+}
+
+/* Establece el estilo para los párrafos dentro de cada tarjeta */
+.tarjeta p {
+
+    /* Define el tamaño de fuente del texto a 0.9em para que sea más compacto */
+    font-size: 0.9em; 
+
+    /* Define la altura de línea para mejorar la legibilidad del texto */
+    line-height: 1.5; 
+
+}
+
+/* Define la animación de aparición gradual para la imagen */
 @keyframes show{
+
+    /* Comienza con opacidad cero y un tamaño reducido */
     from{
       opacity: 0;
       scale: 25%;
     }
+
+    /* Finaliza con opacidad completa y tamaño original */
     to{
       opacity: 1;
       scale: 100%;
     }
-  }
-  
-  img{
+}
+
+/* Configura animaciones y propiedades de vista para las imágenes en el documento */
+img{
+
+    /* Define el nombre de la línea de tiempo de vista de la imagen */
     view-timeline-name: --image;
-    view-timeline-axis: block ;
-    
+
+    /* Establece el eje de la línea de tiempo en el eje bloque */
+    view-timeline-axis: block;
+
+    /* Asocia la animación con la línea de tiempo de la imagen */
     animation-timeline: --image;
+
+    /* Aplica la animación 'show' a la imagen */
     animation-name: show;
-    
+
+    /* Establece el rango de la animación al entrar la imagen en un 25% y cubrir hasta un 50% */
     animation-range: entry: 25% cover 50%;
+
+    /* Asegura que la animación mantenga su estado en la posición inicial y final */
     animation-fill: both;
-  }
+}
